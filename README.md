@@ -1,32 +1,34 @@
 # ChurnSense AI 🚀  
-### Predict Customer Churn Before It Happens
+### Predict. Prevent. Retain.
 
-ChurnSense AI is a production-ready machine learning system that predicts customer churn risk and provides actionable insights through an interactive Streamlit dashboard.
+![Customer Risk Dashboard](dashboard-overview.png)
+
+ChurnSense AI is a production-ready machine learning system that predicts customer churn risk and provides actionable business insights through an interactive Streamlit dashboard.
 
 ---
 
 ## 🎯 Business Problem
 
-Customer churn directly impacts revenue.  
-Most companies detect churn **after** losing customers.
+Customer churn directly impacts revenue and long-term growth.  
+Most organizations detect churn **after customers leave**, making retention reactive instead of proactive.
 
-ChurnSense AI helps organizations:
-- Identify high-risk customers early
-- Understand key churn-driving factors
-- Take proactive retention actions
+ChurnSense AI enables:
+
+- Early identification of high-risk customers  
+- Data-driven retention strategies  
+- Risk segmentation for prioritization  
+- Actionable AI recommendations  
 
 ---
 
-## 🧠 Solution Approach
-
-The project follows an end-to-end ML pipeline:
+## 🧠 End-to-End ML Pipeline
 
 1. Data Cleaning & Preprocessing  
 2. Exploratory Data Analysis (EDA)  
 3. Feature Engineering  
 4. Model Training & Comparison  
-5. Model Evaluation  
-6. Deployment via Streamlit Dashboard  
+5. Performance Evaluation  
+6. Deployment via Interactive Dashboard  
 
 ---
 
@@ -52,16 +54,62 @@ Final Model: **XGBoost Classifier**
 | Recall | 0.81 |
 | ROC-AUC | 0.89 |
 
-The model balances precision and recall to effectively identify high-risk customers while minimizing false positives.
+The model effectively balances false positives and false negatives, ensuring high-risk customers are accurately identified.
 
 ---
 
-## 💡 Key Features
+# 📸 Dashboard Preview
 
-- Real-time churn probability prediction  
-- Feature importance visualization  
-- Confusion matrix & performance metrics  
-- Interactive dashboard for business users  
+---
+
+### 📊 1. Customer Risk Overview
+![Customer Risk Overview](dashboard-overview.png)
+
+Shows:
+- Total Customers
+- High-Risk Customers
+- Average Risk Score
+
+---
+
+### 📈 2. Probability Distribution
+![Probability Distribution](probability-distribution.png)
+
+Visualizes churn probability spread across customer base.
+
+---
+
+### 🎯 3. Risk Segmentation
+![Risk Segmentation](risk-segmentation.png)
+
+Customers segmented into:
+- High Risk  
+- Medium Risk  
+- Low Risk  
+
+Helps prioritize retention efforts.
+
+---
+
+### 🔍 4. Top Churn Drivers
+![Top Churn Drivers](churn-drivers.png)
+
+Feature importance graph identifying:
+- Tenure
+- Total Charges
+- Contract Type
+- Monthly Charges  
+and other churn-driving factors.
+
+---
+
+### 🤖 5. AI Retention Suggestions
+![AI Retention Suggestions](retention-suggestions.png)
+
+Automated action recommendations based on risk segment:
+- Assign retention manager  
+- Offer loyalty discount  
+- Customer engagement strategy  
 
 ---
 
@@ -70,30 +118,38 @@ The model balances precision and recall to effectively identify high-risk custom
 If deployed in a telecom company with 10,000 customers:
 
 - Early detection of ~15% high-risk users  
-- Potential 8–10% improvement in retention  
+- 8–10% potential retention improvement  
 - Significant annual revenue savings  
+- Smarter allocation of retention budget  
 
 ---
 
 ## 🚀 Live Demo
 
-👉 Try the app here:  
+👉 Try the interactive app here:  
 https://churnsense-ai-e8uur4u5av4w7evxpz9eck.streamlit.app/
 
 ---
 
-## 🔮 Future Improvements
+## 🔮 Future Enhancements
 
-- Hyperparameter tuning using Optuna  
 - SHAP-based model explainability  
-- API deployment with FastAPI  
+- Hyperparameter tuning with Optuna  
+- REST API deployment (FastAPI)  
 - Docker containerization  
+- Real-time database integration  
 
+---
+## 📂 Project Structure
+app/ # Streamlit dashboard
+models/ # Trained ML models
+data/ # Sample dataset
+notebooks/ # EDA & training workflow
 ---
 
 ## 👨‍💻 Author
 
 **Divyant Mayank**  
-Aspiring Product Manager & Data Analytics Enthusiast  
+Data Analytics | Machine Learning | Aspiring Product Leader
 
 ## 📂 Project Structure
