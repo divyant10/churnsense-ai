@@ -3,21 +3,21 @@
 
 ![Customer Risk Dashboard](dashboard-overview.png)
 
-ChurnSense AI is a production-ready machine learning system that predicts customer churn risk and provides actionable business insights through an interactive Streamlit dashboard.
+ChurnSense AI is a production-ready machine learning system that predicts customer churn risk and delivers actionable business insights through an interactive Streamlit dashboard.
 
 ---
 
 ## 🎯 Business Problem
 
 Customer churn directly impacts revenue and long-term growth.  
-Most organizations detect churn **after customers leave**, making retention reactive instead of proactive.
+Most organizations identify churn **after customers leave**, making retention reactive instead of proactive.
 
-ChurnSense AI enables:
+ChurnSense AI enables businesses to:
 
-- Early identification of high-risk customers  
-- Data-driven retention strategies  
-- Risk segmentation for prioritization  
-- Actionable AI recommendations  
+- Detect high-risk customers early  
+- Segment customers by churn probability  
+- Understand key churn-driving factors  
+- Take data-driven retention actions  
 
 ---
 
@@ -47,69 +47,41 @@ ChurnSense AI enables:
 
 Final Model: **XGBoost Classifier**
 
-| Metric | Score |
-|--------|--------|
-| Accuracy | 87% |
-| Precision | 0.84 |
-| Recall | 0.81 |
-| ROC-AUC | 0.89 |
+| Metric     | Score |
+|------------|--------|
+| Accuracy   | 87%    |
+| Precision  | 0.84   |
+| Recall     | 0.81   |
+| ROC-AUC    | 0.89   |
 
-The model effectively balances false positives and false negatives, ensuring high-risk customers are accurately identified.
-
----
-
-# 📸 Dashboard Preview
+The model balances precision and recall to effectively identify high-risk customers while minimizing false positives.
 
 ---
 
-### 📊 1. Customer Risk Overview
-![Customer Risk Overview](dashboard-overview.png)
+## 📸 Dashboard Highlights
 
-Shows:
-- Total Customers
-- High-Risk Customers
-- Average Risk Score
-
----
-
-### 📈 2. Probability Distribution
-![Probability Distribution](probability-distribution.png)
-
-Visualizes churn probability spread across customer base.
-
----
-
-### 🎯 3. Risk Segmentation
+### 🎯 Risk Segmentation
 ![Risk Segmentation](risk-segmentation.png)
 
-Customers segmented into:
+Customers are categorized into:
 - High Risk  
 - Medium Risk  
 - Low Risk  
 
-Helps prioritize retention efforts.
+This helps retention teams prioritize outreach efforts strategically.
 
 ---
 
-### 🔍 4. Top Churn Drivers
+### 🔍 Top Churn Drivers
 ![Top Churn Drivers](churn-drivers.png)
 
-Feature importance graph identifying:
-- Tenure
-- Total Charges
-- Contract Type
+Feature importance analysis reveals major churn-driving factors such as:
+- Tenure Months  
+- Total Charges  
+- Contract Type  
 - Monthly Charges  
-and other churn-driving factors.
 
----
-
-### 🤖 5. AI Retention Suggestions
-![AI Retention Suggestions](retention-suggestions.png)
-
-Automated action recommendations based on risk segment:
-- Assign retention manager  
-- Offer loyalty discount  
-- Customer engagement strategy  
+This enables data-driven business decisions instead of guesswork.
 
 ---
 
@@ -117,16 +89,16 @@ Automated action recommendations based on risk segment:
 
 If deployed in a telecom company with 10,000 customers:
 
-- Early detection of ~15% high-risk users  
-- 8–10% potential retention improvement  
-- Significant annual revenue savings  
-- Smarter allocation of retention budget  
+- ~15% high-risk customers detected early  
+- 8–10% potential improvement in retention  
+- Significant annual revenue protection  
+- Optimized retention budget allocation  
 
 ---
 
 ## 🚀 Live Demo
 
-👉 Try the interactive app here:  
+👉 Try the interactive application:  
 https://churnsense-ai-e8uur4u5av4w7evxpz9eck.streamlit.app/
 
 ---
@@ -135,22 +107,22 @@ https://churnsense-ai-e8uur4u5av4w7evxpz9eck.streamlit.app/
 
 - SHAP-based model explainability  
 - Hyperparameter tuning with Optuna  
-- REST API deployment (FastAPI)  
+- REST API deployment using FastAPI  
 - Docker containerization  
 - Real-time database integration  
 
 ---
+
 ## 📂 Project Structure
 app/ # Streamlit dashboard
 models/ # Trained ML models
 data/ # Sample dataset
-notebooks/ # EDA & training workflow
+notebooks/ # EDA & model training workflow
+requirements.txt
+
 ---
 
 ## 👨‍💻 Author
 
 **Divyant Mayank**  
-Data Analytics | Machine Learning | Aspiring Product Leader
-
-
-
+Machine Learning | Data Analytics | Aspiring Product Leader
